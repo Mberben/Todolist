@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Accueil</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -16,8 +18,10 @@
         <div class="connexion-form">
             <h1>Identifiez-vous</h1>
             <form id="form-connection" >
-                <label for="Prenom">Prenom</label>
-                <input type="text" id="Prenom" name="Prenom" required>
+                <div class="form-groupe">
+                 <label for="Prénom">Prénom</label>
+                 <input type="text" id="Prénom" name="Prénom" required placeholder="Ex: Mathias">
+                </div>
                 <p class="message-erreur" id="message-erreur">Le champ ne peut pas être vide.</p>
 
                 <button type="submit">Voir la liste des tâches</button>

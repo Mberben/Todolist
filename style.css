@@ -1,0 +1,86 @@
+/* page principale réglage */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+
+.page-connexion {
+  display: flex;
+  min-height: 100vh;
+}
+
+.illustration {
+  width: 872px;
+  flex: 6;
+}
+
+.connexion-form {
+    flex: 4;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px;
+  gap: 30px;
+}
+
+.connexion-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-groupe {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Le champ de saisie */
+.form-groupe input {
+  padding: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Le bouton rouge */
+.connexion-form button {
+  padding: 18px;
+  border: none;
+  border-radius: 32px;
+  background-color: #ff432a;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Cacher le message d'erreur */
+.message-erreur {
+  display: none;
+}

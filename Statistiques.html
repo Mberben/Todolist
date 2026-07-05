@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Statistiques</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"/>
+    
+  </head>
+
+  <body>
+    <aside class="sidebar">
+      <div class="profil">
+        <!-- avatar + "Mathias" -->
+        <img src="Images/avatar.png" alt="Mathias" />
+        <p id="username">Mathias</p>
+      </div>
+      <nav>
+        <!-- les liens Tâches / Statistiques -->
+        <ul>
+          <li><a href="Taches.html"> <img src="Images/task-square.png" alt="">Tâches</a></li>
+          <li><a href="Statistiques.html"> <img src="Images/graph.png" class="active" alt="">Statistiques</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="page-statistiques">
+      <h1>Mes statistiques</h1>
+      <div class="cartes">
+        <!-- carte 1 -->
+        <div class="carte carte-total">
+          <img src="Images/total.png" alt="Icone de tâches" />
+          <h2>Nombre total de tâches</h2>
+          <p id="nombre-taches">0</p>
+        </div>
+
+        <!-- carte 2 -->
+        <div class="carte carte-terminees">
+          <img src="Images/terminer.png" alt="Icone de tâches terminées" />
+          <h2>Nombre de tâches terminées</h2>
+          <p id="taches-terminees">0</p>
+        </div>
+
+        <!-- carte 3 -->
+        <div class="carte carte-a-faire">
+          <img src="Images/Afaire.png" alt="Icone de tâches à faire" />
+          <h2>Nombres de Tâches à faire</h2>
+          <p id="taches-a-faire">0</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -84,3 +84,87 @@ h1 {
 .message-erreur {
   display: none;
 }
+
+
+
+/* css de la page statistique */
+
+body {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+aside.sidebar {
+    flex-shrink: 0;
+    width: 240px;
+    padding: 24px;
+    background-color: #ffffff;
+}
+
+main.page-statistiques {
+    flex: 1;
+    padding: 40px;
+}
+
+.cartes {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+    
+}
+
+.carte.carte-total {
+    background-color: #FFF3D6;
+    color: #FF8500;
+  
+}
+
+.carte.carte-terminees {
+    background-color: #E1F8DF;
+    color: #28901F;
+}
+
+.carte.carte-a-faire {
+    background-color: #DBE9FC;
+    color: #0146CF;
+}
+
+.carte {
+    height: 196px;
+    width: 330px;
+    border-radius: 16px;
+    flex: 1;
+    padding: 32px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.page-statistiques h1 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.page-statistiques h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* La liste : enlever les puces */
+.sidebar ul {
+  list-style: none;
+}
+
+/* Les liens : enlever le soulignement et changer la couleur */
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #344054;
+  font-size: 14px;
+}

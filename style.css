@@ -111,7 +111,7 @@ main.page-statistiques {
 .cartes {
     display: flex;
     gap: 16px;
-    margin-top: 32px;
+    margin-top: 33px;
     
 }
 
@@ -137,6 +137,7 @@ main.page-statistiques {
     border-radius: 16px;
     flex: 1;
     padding: 32px;
+  
 }
 
 h2 {
@@ -191,5 +192,28 @@ h2 {
   left: -24px;          /* déborde le padding gauche de la sidebar */
   right: -24px;         /* déborde le padding droit → rejoint la bordure */
   border-top: 1px solid #d9cccc9d;
+}
+
+#badge-taches {
+  background-color: #FFDB7F;
+  color: #FF432A;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 2px 10px;
+  border-radius: 12px;
+  margin-left: auto; /* pousse le badge à l'extrémité droite */
+}
+.carte img {
+  margin-bottom: 16px;
+}
+
+.carte h2 {
+  margin-bottom: 16px;   /* ajuste jusqu'à ce que ça te plaise */
+}
+
+.carte p {
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
 }
 

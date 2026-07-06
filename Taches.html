@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Liste des tâches</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="page-taches">
+    <aside class="sidebar">
+      <div class="profil">
+        <!-- avatar + "Mathias" -->
+        <img src="Images/avatar.png" alt="Mathias" />
+        <p id="username">Mathias</p>
+      </div>
+      <nav>
+        <!-- les liens Tâches / Statistiques -->
+        <ul>
+          <li>
+            <a href="Taches.html" class="active">
+              <img src="Images/task-square.png" alt="" />Tâches
+              <span id="badge-taches">3</span></a
+            >
+          </li>
+          <li>
+            <a href="Statistiques.html"
+              ><img src="Images/graph.png" alt="" />Statistiques</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="mes-taches">
+      <div class="entete">
+        <h1>Mes tâches</h1>
+        <button class="ajouter-tache">+ Ajouter une tâche</button>
+      </div>
+
+      <div class="a-faire">
+        <h2 class="titre-tache titre-a-faire">À faire</h2>
+        <ul>
+          <li class="tache">
+            <div class="tache-titre">
+              <input type="checkbox" id="tache1" />
+              <label for="tache1">Faire la tarte aux pommes</label>
+            </div>
+            <p class="tache-description">Pour 6 personnes et sans canelle</p>
+            <p class="tache-date">
+              <img src="Images/proicons_clock.png" alt="" />Dimanche 24 novembre
+            </p>
+            <a href="Details.html" class="tache-lien">Consulter la tâche</a>
+          </li>
+        </ul>
+      </div>
+      <div class="terminee">
+        <h2 class="titre-tache titre-terminee">Terminée</h2>
+        <ul>
+          <li class="tache">
+            <div class="tache-titre">
+              <input type="checkbox" id="tache3" checked />
+              <label for="tache3">Aller chez le médecin</label>
+            </div>
+            <p class="tache-description">Douleur à la jambe</p>
+            <p class="tache-date">
+              <img src="Images/proicons_clock.png" alt="" />Jeudi 11 juin
+            </p>
+            <a href="Details.html" class="tache-lien">Consulter la tâche</a>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

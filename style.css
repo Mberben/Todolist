@@ -89,7 +89,7 @@ h1 {
 
 /* css de la page statistique */
 
-body {
+.page-stats{
   display: flex;
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
@@ -100,6 +100,7 @@ aside.sidebar {
     width: 240px;
     padding: 24px;
     background-color: #ffffff;
+    border-right: 1px solid #d9cccc9d;
 }
 
 main.page-statistiques {
@@ -167,4 +168,28 @@ h2 {
   text-decoration: none;
   color: #344054;
   font-size: 14px;
+  padding: 10px;
 }
+
+.active {
+  background-color: #FFF5EF;
+  border-radius: 6px;
+}
+
+.profil {
+  position: relative;   /* nécessaire pour positionner le trait */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.profil::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;        /* place le trait sous le profil, dans la marge */
+  left: -24px;          /* déborde le padding gauche de la sidebar */
+  right: -24px;         /* déborde le padding droit → rejoint la bordure */
+  border-top: 1px solid #d9cccc9d;
+}
+

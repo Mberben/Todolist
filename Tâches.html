@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Statistiques</title>
+    <title>Liste des tâches</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,7 +14,7 @@
     
   </head>
 
-  <body class="page-stats">
+  <body class="page-taches">
     <aside class="sidebar">
       <div class="profil">
         <!-- avatar + "Mathias" -->
@@ -25,35 +25,35 @@
         <!-- les liens Tâches / Statistiques -->
         <ul>
           <li><a href="Taches.html"> <img src="Images/task-square.png" alt="">Tâches</a></li>
-          <li><a href="Statistiques.html" class="active"><img src="Images/graph.png"  alt="">Statistiques</a></li>
+          <li><a href="Statistiques.html"> <img src="Images/graph.png" class="active" alt="">Statistiques</a></li>
         </ul>
       </nav>
     </aside>
 
-    <main class="page-statistiques">
-      <h1>Mes statistiques</h1>
-      <div class="cartes">
-        <!-- carte 1 -->
-        <div class="carte carte-total">
-          <img src="Images/total.png" alt="Icone de tâches" />
-          <h2>Nombre total de tâches</h2>
-          <p id="nombre-taches">0</p>
-        </div>
+    <main class="Mes-taches">
+        <H1>Mes tâches</H1>
+        <div class="A-faire">
+            <h2 class="titre-tache">A faire</h2>
+            <input type="checkbox" id="tache1" />
+            <label for="tache1">Faire la tarte aux pommes</label><br /> 
+            <input type="checkbox" id="tache2" />
+            <label for="tache2">Rendre dossier scolaire</label><br />
 
-        <!-- carte 2 -->
-        <div class="carte carte-terminees">
-          <img src="Images/terminer.png" alt="Icone de tâches terminées" />
-          <h2>Nombre de tâches terminées</h2>
-          <p id="taches-terminees">0</p>
         </div>
+        <div class="Terminée">
+            <h2 class="titre-tache">Terminée</h2>
+            <input type="checkbox" id="tache3" checked />
+            <label for="tache3">Aller chez le médecin</label><br />
 
-        <!-- carte 3 -->
-        <div class="carte carte-a-faire">
-          <img src="Images/Afaire.png" alt="Icone de tâches à faire" />
-          <h2>Nombres de Tâches à faire</h2>
-          <p id="taches-a-faire">0</p>
         </div>
-      </div>
+        <button class="ajouter-tache"> + Ajouter une tâche</button>
+
+
+
+
     </main>
+      
+       
+    
   </>
 </html>

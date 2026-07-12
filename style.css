@@ -295,22 +295,12 @@ h2 {
   justify-content: flex-start;
 }
 
-.tache-description {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex: 1;
-  min-width: 0; /* AJOUT : la colonne peut rétrécir */
-  white-space: nowrap; /* AJOUT : pas de retour à la ligne */
-  overflow: hidden; /* AJOUT : cache le débordement */
-  text-overflow: ellipsis; /* AJOUT : remplace par … */
-}
 
 .tache-titre {
   display: flex;
   align-items: center;
   gap: 8px;
-  flex: 0 0 25%;
+  flex: 1;
   min-width: 0;
   justify-content: flex-start;
 }
@@ -323,7 +313,6 @@ h2 {
 }
 
 .tache-titre,
-.tache-description,
 .tache-date {
   border-right: 1px solid #e5e1e1;
   padding-right: 20px;
@@ -334,7 +323,6 @@ h2 {
 }
 
 .terminee .tache-titre label,
-.terminee .tache-description,
 .terminee .tache-date {
     text-decoration: line-through;   /* barre le texte */
     color: #9CA3AF;                   /* gris clair */
@@ -342,4 +330,65 @@ h2 {
 
 .tache input[type="checkbox"] {
     accent-color: #BEECBA;  /* couleur du checkbox */
+}
+
+
+
+/* css de la page details */
+
+.page-detail {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  max-width: 100%;
+}
+
+.detail-tache header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 82px 0 60px 0;
+  ;
+}
+
+.detail-tache {
+  padding-left: 80px;
+  padding-right: 80px;
+  flex: 1;
+
+}
+
+.tache-details {
+  display: flex;
+  gap: 476px;
+  padding-top: 31px;
+ 
+}
+
+#basculer-statut {
+  background-color: #ffffff;
+  color: #FF432A;
+  border-color: #FF432A;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 200;
+  cursor: pointer;
+  margin-top: 58px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#statut-tache {
+  background-color: #8abafd;
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+
+.label-detail {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 10px;
+
 }

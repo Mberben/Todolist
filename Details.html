@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Liste des tâches</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="page-detail">
+    <aside class="sidebar">
+      <div class="profil">
+        <!-- avatar + "Mathias" -->
+        <img src="Images/avatar.png" alt="Mathias" />
+        <p id="username">Mathias</p>
+      </div>
+      <nav>
+        <!-- les liens Tâches / Statistiques -->
+        <ul>
+          <li>
+            <a href="Taches.html" class="active">
+              <img src="Images/task-square.png" alt="" />Tâches
+              <span id="badge-taches">3</span></a
+            >
+          </li>
+          <li>
+            <a href="Statistiques.html"
+              ><img src="Images/graph.png" alt="" />Statistiques</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="detail-tache">
+      <header>
+        <a href="Taches.html"
+          ><img src="Images/mynaui_arrow-up.png" alt="Retour"
+        /></a>
+        <button id="supprimer-tache">
+          <img src="Images/mynaui_trash.png" alt="Supprimer" />
+        </button>
+      </header>
+      
+      <div class="bloc-detail">
+        <img src="Images/detail.png" alt="Détail de la tâche" />
+        <h1 id="titre-tache">Faire la tarte aux pommes</h1>
+
+        <div class="tache-details">
+          <div>
+            <p class="label-detail">Statut</p>
+            <p id="statut-tache">À faire</p>
+          </div>
+          <div>
+            <p class="label-detail">Date de début</p>
+            <p id="date-tache">24 décembre 2023</p>
+          </div>
+        </div>
+        <button id="basculer-statut"><img src="Images/validation.png" alt="Valider" />Terminer la tâche</button>
+      </div
+    </main>
+  </body>
+</html>

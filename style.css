@@ -392,3 +392,10 @@ h2 {
   margin-bottom: 10px;
 
 }
+
+#liste-a-faire,
+#liste-terminee {
+  display: flex;
+  flex-direction: column;   /* les tâches empilées verticalement */
+  gap: 16px;                /* l'espace entre chaque tâche */
+}
